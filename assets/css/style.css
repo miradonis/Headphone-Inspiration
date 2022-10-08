@@ -45,114 +45,118 @@ body {
     background-color: #272727;
 }
 
+/*
+====================================================================
+                code for nav left (fixed) 
+                for all pages the same code
+====================================================================
+*/
 
-/*===========================================================
-                    LIST LEFT
-===========================================================*/
-/* #bg-pic__list {
-    padding-top: 100vh;
-    margin: 5vh 0 30vh 0;
-    background-image: url("../img/section-about-1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 90%;
+#nav__fixed-left {
+    position: fixed;
     display: flex;
-    justify-content: flex-start;
-}
-
-#bg-pic__list article {
-    margin: 0;
-}
-
-#bg-pic__list article:nth-of-type(1) {
-    margin: 13vh 0 0 2vw;
-    width: 3vw;
+    gap: 0 36px;
+    width: 11vw;
+    margin: 33vh 0 0 2vw;
+    padding: 0;
 }
 
 .circle {
     height: 20px;
     width: 20px;
-    background-color: #272727;
+    background-color: transparent;
     border: 1px solid rgb(115, 115, 115);
     border-radius: 50px;
 }
 
-.active {
-    height: 28px;
-    width: 28px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 50px;
-    margin: 0;
-    position: fixed;
-    left: 1.8vw;
-    top: 34.7vh;
-}
-
 .line {
-    height: 8.5vh;
+    height: 8vh;
     width: 1px;
     margin: .6vh 0 2.5vh .5vw;
     background-color: rgb(115, 115, 115);
 }
 
-.fixed__2 ul li a span {
-    color: #fff;
-} */
-
 /*--------------------------LIST---------------------------*/
-
-/* #bg-pic__list article:nth-of-type(2) ul li:nth-of-type(1) {
-    margin: 13.5vh 0 1vh 0;
+.nav__list ul {
     list-style: none;
 }
 
-#bg-pic__list article:nth-of-type(2) ul li:nth-of-type(2) {
-    margin: 9.2vh 0 0 0;
-    list-style: none;
+.nav__list ul li {
+    margin-bottom: 11.5vh;
 }
 
-#bg-pic__list article:nth-of-type(2) ul li:nth-of-type(3) {
-    margin: 12vh 0 0 0;
-    list-style: none;
+.nav__list ul li:nth-of-type(5) {
+    margin-bottom: 0;
 }
 
-#bg-pic__list article:nth-of-type(2) ul li:nth-of-type(4) {
-    margin: 11.8vh 0 0 0;
-    list-style: none;
-}
-
-#bg-pic__list article:nth-of-type(2) ul li:nth-of-type(5) {
-    margin: 11.8vh 0 0 0;
-    list-style: none;
-}
-
-#bg-pic__list article:nth-of-type(2) ul li a {
-    color: rgb(173, 173, 173);
+.nav__list ul li a {
     text-decoration: none;
+    font-family: WorkSans-Regular;
+    font-size: 1.5rem;
+    color: rgb(140, 140, 140);
+}
+
+.nav__list span {
+    color: white;
+    font-family: WorkSans-Regular;
     font-size: 1.5rem;
 }
 
-#bg-pic__list article:nth-of-type(2) ul li a span {
-    color: rgb(206, 206, 206);
-    text-decoration: none;
-    font-size: 1.5rem;
+/*-------------------------ACTIVE--------------------------*/
+.active__about {
+    position: relative;
+    height: 26px;
+    width: 26px;
+    border-radius: 50px;
+    border: 1px solid white;
+    right: 4px;
+    bottom: 4px;
 }
 
-.fixed__1 {
-    position: fixed;
-    left: 0;
-    right: 50px;
-    top: 10vw;
+.active__lounger {
+    position: relative;
+    height: 26px;
+    width: 26px;
+    border-radius: 50px;
+    border: 1px solid white;
+    left: 43px;
+    top: 22px;
 }
 
-.fixed__2 {
-    position: fixed;
-    left: 5vw;
-    right: 50px;
-    top: 10vw;
-} */
+.active__experience {
+    position: relative;
+    height: 26px;
+    width: 26px;
+    border-radius: 50px;
+    border: 1px solid white;
+    left: 43px;
+    top: 22px;
+}
 
+.active__inspiration {
+    position: relative;
+    height: 26px;
+    width: 26px;
+    border-radius: 50px;
+    border: 1px solid white;
+    left: 43px;
+    top: 22px;
+}
+
+.active__shop {
+    position: relative;
+    height: 26px;
+    width: 26px;
+    border-radius: 50px;
+    border: 1px solid white;
+    left: 43px;
+    top: 22px;
+}
+
+/*
+====================================================================
+====================================================================
+*/
 /*------------------------HEADER---------------------------*/
 body header {
     display: flex;
@@ -278,7 +282,7 @@ body .heading h1 {
     background-image: url("../img/section-experience-1.jpg");
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 53% 100%;
+    background-size: 50% 100%;
 }
 
 .lounger__heading-text {
@@ -321,16 +325,16 @@ body .heading h1 {
 }
 
 .video video {
-    height: 60vh;
+    height: 70vh;
 }
 
 #exist_to_create {
-    width: 56vw;
+    width: 65vw;
     margin: 0 auto;
 }
 
 .heading__list {
-    margin: 15vh 10vw 0 4vw;
+    margin: 15vh 10vw 0 5vw;
 }
 
 .heading__list h1 {
@@ -374,20 +378,20 @@ body .heading h1 {
 }
 
 .pic-left__text .pic__left img {
-    width: 28vw;
+    width: 30vw;
 }
 
 .pic-left__text .alchemy__text h2 {
     color: rgb(234, 204, 194);
     font-family: WorkSans-Light;
     margin: 12vh 0 1vh 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .alchemy__text p:nth-of-type(1) {
     font-family: WorkSans-Light;
     color: rgb(234, 204, 194);
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: 1px;
 }
 
@@ -403,26 +407,25 @@ body .heading h1 {
 .pic-right__text {
     display: flex;
     justify-content: center;
-    gap: 0 2vw;
     margin-bottom: 10vh;
 }
 
 .sound__text {
-    width: 19vw;
-    margin-top: 10vh;
+    width: 22vw;
+    margin: 10vh 6vw 0 2vw;
 }
 
 .sound__text h2 {
     color: rgb(234, 204, 194);
     font-family: WorkSans-Light;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 2vh;
 }
 
 .sound__text p:nth-of-type(1) {
     font-family: WorkSans-Light;
     color: rgb(234, 204, 194);
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .sound__text p:nth-of-type(2) {
@@ -434,8 +437,7 @@ body .heading h1 {
 }
 
 .pic__right img {
-    width: 25vw;
-    height: auto;
+    width: 26vw;
 }
 
 /*=====================================================
