@@ -1,0 +1,490 @@
+/*=============================================================
+                    ASSETS
+=============================================================*/
+/* Font: Work sans
+
+Colors: 
+#2e2e2e 
+#867772 
+rgb(234, 204, 194) 
+#ebccc2  
+#fff 
+rgb(115, 115, 115) */
+
+
+/*============================================================
+==============================================================
+                GENERAL
+==============================================================
+============================================================*/
+/*--------------------------FONTS---------------------------*/
+@font-face {
+    font-family: WorkSans-Regular;
+    src: url("../fonts/WorkSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: WorkSans-Light;
+    src: url("../fonts/WorkSans-Light.ttf");
+}
+/*----------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: WorkSans-Regular;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #272727;
+}
+
+
+/*===========================================================
+                    LIST LEFT
+===========================================================*/
+/* #bg-pic__list {
+    padding-top: 100vh;
+    margin: 5vh 0 30vh 0;
+    background-image: url("../img/section-about-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#bg-pic__list article {
+    margin: 0;
+}
+
+#bg-pic__list article:nth-of-type(1) {
+    margin: 13vh 0 0 2vw;
+    width: 3vw;
+}
+
+.circle {
+    height: 20px;
+    width: 20px;
+    background-color: #272727;
+    border: 1px solid rgb(115, 115, 115);
+    border-radius: 50px;
+}
+
+.active {
+    height: 28px;
+    width: 28px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin: 0;
+    position: fixed;
+    left: 1.8vw;
+    top: 34.7vh;
+}
+
+.line {
+    height: 8.5vh;
+    width: 1px;
+    margin: .6vh 0 2.5vh .5vw;
+    background-color: rgb(115, 115, 115);
+}
+
+.fixed__2 ul li a span {
+    color: #fff;
+} */
+
+/*--------------------------LIST---------------------------*/
+
+/* #bg-pic__list article:nth-of-type(2) ul li:nth-of-type(1) {
+    margin: 13.5vh 0 1vh 0;
+    list-style: none;
+}
+
+#bg-pic__list article:nth-of-type(2) ul li:nth-of-type(2) {
+    margin: 9.2vh 0 0 0;
+    list-style: none;
+}
+
+#bg-pic__list article:nth-of-type(2) ul li:nth-of-type(3) {
+    margin: 12vh 0 0 0;
+    list-style: none;
+}
+
+#bg-pic__list article:nth-of-type(2) ul li:nth-of-type(4) {
+    margin: 11.8vh 0 0 0;
+    list-style: none;
+}
+
+#bg-pic__list article:nth-of-type(2) ul li:nth-of-type(5) {
+    margin: 11.8vh 0 0 0;
+    list-style: none;
+}
+
+#bg-pic__list article:nth-of-type(2) ul li a {
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#bg-pic__list article:nth-of-type(2) ul li a span {
+    color: rgb(206, 206, 206);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.fixed__1 {
+    position: fixed;
+    left: 0;
+    right: 50px;
+    top: 10vw;
+}
+
+.fixed__2 {
+    position: fixed;
+    left: 5vw;
+    right: 50px;
+    top: 10vw;
+} */
+
+/*------------------------HEADER---------------------------*/
+body header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #867772;
+    padding: 6vh 3vw
+}
+
+body header nav {
+    padding-right: 7vw;
+}
+
+body header nav ul {
+    display: flex;
+}
+
+body header nav ul li {
+    display: inline;
+}
+
+body header nav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #867772;
+}
+
+body header nav ul li a:hover {
+    transition: 1s;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    color: #ebccc2;
+}
+
+body header nav ul ul {
+    margin: 0 5vw;
+}
+
+.inner__list li:nth-of-type(2) {
+    margin: 0 2vw;
+}
+
+/*============================================
+                INDEX HTML
+=============================================*/
+/*---------EXIST_TO_CREATE & LIST------------*/
+
+body .heading h1 {
+    font-family: WorkSans-Light;
+    color: rgb(234, 204, 194);   
+    font-size: 3rem;
+    line-height: 4vh;
+    width: 20vw;
+    margin: 10vh 0 0 30vw;
+}
+
+/*-----------------BG-PIC------------------*/
+.bg__pic {
+    padding-top: 100vh;
+    margin: 15vh auto 15vh auto;
+    background-image: url("../img/section-about-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+/*============================================
+                PIC & TEXT
+============================================*/
+#pic__text {
+    margin: 20vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 5vw;
+}
+
+#pic__text div img {
+    height: 60vh;
+    width: auto;
+}
+
+.heading__text {
+    color: rgb(115, 115, 115);
+    font-size: 1.5rem;
+    line-height: 3.5vh;
+    margin: 4vh 0 2vh 0;
+}
+
+.heading__text h2 {
+    font-family: WorkSans-Light;
+    color: rgb(234, 204, 194);
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+
+.heading__text p {
+    width: 22vw;
+    color: rgb(115, 115, 115);
+    font-size: 1.5rem;
+    line-height: 3.5vh;
+}
+
+.heading__text__firstParagraph {
+    margin: 4vh 0 2vh 0;
+}
+
+/*=====================================================
+=======================================================
+                LOUNGER EXPERIENCE STYLE
+=======================================================
+=====================================================*/
+#bg-pic-text__lounger {
+    height: 45vw;
+    background-image: url("../img/section-voyager.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 53% 100%;
+}
+
+#bg-pic-text__experience {
+    height: 45vw;
+    background-image: url("../img/section-experience-1.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 53% 100%;
+}
+
+.lounger__heading-text {
+    margin: 8vh  0 0 56vw;
+    width: 28vw;
+}
+
+.experience__heading-text {
+    margin: 6vh 0 0 56vw;
+    width: 28vw;
+}
+
+.lounger__heading-text h1,
+.experience__heading-text h1 {
+    font-family: WorkSans-Light;
+    color: rgb(234, 204, 194);
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin: 0 0 10vh 0;
+} 
+
+.lounger__heading-text p,
+.experience__heading-text p {
+    width: 24vw;
+    font-family: WorkSans-Light;
+    font-size: 1.7rem;
+    line-height: 3vh;
+    color: rgb(115, 115, 115);
+    margin-bottom: 2vh;
+}
+
+/*=====================================================
+=======================================================
+            EXIST TO CREATE STYLE
+=======================================================
+=====================================================*/
+.video {
+    text-align: center;
+    margin: 10vh 0;
+}
+
+.video video {
+    height: 60vh;
+}
+
+#exist_to_create {
+    width: 56vw;
+    margin: 0 auto;
+}
+
+.heading__list {
+    margin: 15vh 10vw 0 4vw;
+}
+
+.heading__list h1 {
+    font-family: WorkSans-Light;
+    word-spacing: 3px;
+    color: rgb(234, 204, 194);
+    font-size: 2rem;
+}
+
+.heading__list h2 {
+    font-family: WorkSans-Light;
+    letter-spacing: 2px;
+    color: #fadad0;
+    font-size: 3.5rem;
+    margin-top: 1vh;
+}
+
+.heading__list ul {
+    margin: 6vh 0 2vh 0;
+}
+
+.heading__list ul li {
+    display: inline;
+    color: rgb(115, 115, 115);
+    letter-spacing: 2px;
+    border: 2px solid rgb(145, 145, 145);
+    padding: .5vh .5vw;
+}
+
+.heading__list p {
+    color: rgb(115, 115, 115);
+    font-size: 1.5rem;
+}
+
+/*---------------PIC LEFT & TEXT-----------------*/
+.pic-left__text {
+    display: flex;
+    justify-content: center;
+    gap: 0 2vw;
+    margin-top: 15vh;
+}
+
+.pic-left__text .pic__left img {
+    width: 28vw;
+}
+
+.pic-left__text .alchemy__text h2 {
+    color: rgb(234, 204, 194);
+    font-family: WorkSans-Light;
+    margin: 12vh 0 1vh 0;
+    font-size: 2.5rem;
+}
+
+.alchemy__text p:nth-of-type(1) {
+    font-family: WorkSans-Light;
+    color: rgb(234, 204, 194);
+    font-size: 4rem;
+    letter-spacing: 1px;
+}
+
+.alchemy__text p:nth-of-type(2) {
+    width: 19vw;
+    margin-top: 7vh;
+    font-size: 1.5rem;
+    color: rgb(115, 115, 115);
+    line-height: 3vh;
+}
+
+/*---------------PIC RIGHT & TEXT-----------------*/
+.pic-right__text {
+    display: flex;
+    justify-content: center;
+    gap: 0 2vw;
+    margin-bottom: 10vh;
+}
+
+.sound__text {
+    width: 19vw;
+    margin-top: 10vh;
+}
+
+.sound__text h2 {
+    color: rgb(234, 204, 194);
+    font-family: WorkSans-Light;
+    font-size: 2.5rem;
+    margin-bottom: 2vh;
+}
+
+.sound__text p:nth-of-type(1) {
+    font-family: WorkSans-Light;
+    color: rgb(234, 204, 194);
+    font-size: 4rem;
+}
+
+.sound__text p:nth-of-type(2) {
+    width: 19vw;
+    margin-top: 5vh;
+    font-size: 1.5rem;
+    color: rgb(115, 115, 115);
+    line-height: 3vh;
+}
+
+.pic__right img {
+    width: 25vw;
+    height: auto;
+}
+
+/*=====================================================
+=======================================================
+            PRODUCT STYLE
+=======================================================
+=====================================================*/
+#pic__product {
+    height: 45vw;
+    background-image: url("../img/section-composition4.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 53% 100%;
+}
+
+.product__name__btn {
+    width: 20vw;
+    margin-left: 65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__name__btn h1 {
+    font-family: WorkSans-Light;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: rgb(234, 204, 194);
+}
+
+.product__name__btn p:nth-of-type(1) {
+    color: rgb(115, 115, 115);
+    font-size: 2rem;
+    font-family: WorkSans-Light;
+    margin-top: 2vh;
+}
+
+.price {
+    margin-top: 4vh;
+    color: rgb(115, 115, 115);
+    font-size: 2rem;
+    font-family: WorkSans-Light;
+}
+
+.product__name__btn button {
+    background-color: #ebccc2;
+    padding: 1vh 1vw;
+    margin-top: 1vh;
+    border: 1px solid white;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
