@@ -72,25 +72,29 @@ body {
 }
 
 /*--------------------------LIST---------------------------*/
+.nav__list {
+    margin-top: .1vh;
+}
+
 .nav__list ul {
     list-style: none;
 }
 
 .nav__list ul li {
-    margin-bottom: 11.5vh;
+    margin-bottom: 11.6vh;
 }
 
 .nav__list ul li a {
     text-decoration: none;
     font-family: WorkSans-Regular;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: rgb(140, 140, 140);
 }
 
 .nav__list span {
     color: white;
     font-family: WorkSans-Regular;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 /*-------------------------ACTIVE--------------------------*/
@@ -193,8 +197,6 @@ body header nav ul ul {
 /*==========================================================
                 INDEX HTML
 ==========================================================*/
-/*-----------------EXIST_TO_CREATE & LIST-----------------*/
-
 body .heading h1 {
     font-family: WorkSans-Light;
     color: rgb(234, 204, 194);   
@@ -214,9 +216,7 @@ body .heading h1 {
     background-size: 90%;
 }
 
-/*=======================================================
-                PIC & TEXT
-=======================================================*/
+/*----------------------PIC & TEXT----------------------*/
 #pic__text {
     margin: 20vh 0 10vh 0;
     display: flex;
@@ -256,9 +256,7 @@ body .heading h1 {
 }
 
 /*=====================================================
-=======================================================
                 LOUNGER EXPERIENCE STYLE
-=======================================================
 =====================================================*/
 #bg-pic-text__lounger {
     height: 45vw;
@@ -272,8 +270,7 @@ body .heading h1 {
     height: 45vw;
     background-image: url("../img/section-experience-1.jpg");
     background-repeat: no-repeat;
-    background-position: left;
-    background-size: 50% 100%;
+    background-size: 53% 100%;
 }
 
 .lounger__heading-text {
@@ -306,9 +303,7 @@ body .heading h1 {
 }
 
 /*=====================================================
-=======================================================
-            EXIST TO CREATE STYLE
-=======================================================
+                EXIST TO CREATE STYLE
 =====================================================*/
 .video {
     text-align: center;
@@ -319,18 +314,13 @@ body .heading h1 {
     height: 70vh;
 }
 
-#exist_to_create {
-    width: 65vw;
-    margin: 0 auto;
-}
-
 .heading__list {
-    margin: 15vh 10vw 0 5vw;
+    margin: 15vh 10vw 0 22vw;
 }
 
 .heading__list h1 {
     font-family: WorkSans-Light;
-    word-spacing: 3px;
+    letter-spacing: 2px;
     color: rgb(234, 204, 194);
     font-size: 2rem;
 }
@@ -351,13 +341,19 @@ body .heading h1 {
     display: inline;
     color: rgb(115, 115, 115);
     letter-spacing: 2px;
-    border: 2px solid rgb(145, 145, 145);
-    padding: .5vh .5vw;
+    border: 1px solid white;
+    padding: .7vh .5vw;
+}
+
+.heading__list ul li:nth-of-type(2) {
+    margin: 0 .1vw;
 }
 
 .heading__list p {
+    font-family: WorkSans-Light;
     color: rgb(115, 115, 115);
     font-size: 1.5rem;
+    letter-spacing: 1px;
 }
 
 /*---------------------PIC LEFT & TEXT----------------------*/
@@ -432,9 +428,7 @@ body .heading h1 {
 }
 
 /*=====================================================
-=======================================================
-            PRODUCT STYLE
-=======================================================
+                    PRODUCT STYLE
 =====================================================*/
 #pic__product {
     height: 45vw;
@@ -483,9 +477,7 @@ body .heading h1 {
 }
 
 /*=====================================================
-=======================================================
                     FORMULAR
-=======================================================
 =====================================================*/
 #form {
     height: 67vh;
@@ -510,11 +502,17 @@ body .heading h1 {
     padding: 1vh 7vw 1vh 1vw;
     margin-bottom: 2vh;
     font-size: 1.5rem;
+    background-color: #272727;
+    border: 1px solid #ebccc2;
+    color: rgb(115, 115, 115);
 }
 
 #form input[type="email"] {
     padding: 1vh 7vw 1vh 1vw;
     font-size: 1.5rem;
+    background-color: #272727;
+    border: 1px solid #ebccc2;
+    color: rgb(115, 115, 115);
 }
 
 #form form textarea {
@@ -525,6 +523,9 @@ body .heading h1 {
     margin: 2vh 0;
     resize: none;
     display: block;
+    background-color: #272727;
+    border: 1px solid #ebccc2;
+    color: rgb(115, 115, 115);
 }
 
 #form form label:nth-of-type(4) {
