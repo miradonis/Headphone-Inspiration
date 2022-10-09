@@ -5,18 +5,13 @@
 
 Colors: 
 #2e2e2e 
-#867772 
+#867772
 rgb(234, 204, 194) 
 #ebccc2  
 #fff 
 rgb(115, 115, 115) */
 
 
-/*============================================================
-==============================================================
-                GENERAL
-==============================================================
-============================================================*/
 /*--------------------------FONTS---------------------------*/
 @font-face {
     font-family: WorkSans-Regular;
@@ -27,7 +22,7 @@ rgb(115, 115, 115) */
     font-family: WorkSans-Light;
     src: url("../fonts/WorkSans-Light.ttf");
 }
-/*----------------------------------------------------------*/
+/*------------------------GENERAL---------------------------*/
 
 * {
     margin: 0;
@@ -57,7 +52,7 @@ body {
     display: flex;
     gap: 0 36px;
     width: 11vw;
-    margin: 33vh 0 0 2vw;
+    margin: 20vh 0 0 2vw;
     padding: 0;
 }
 
@@ -83,10 +78,6 @@ body {
 
 .nav__list ul li {
     margin-bottom: 11.5vh;
-}
-
-.nav__list ul li:nth-of-type(5) {
-    margin-bottom: 0;
 }
 
 .nav__list ul li a {
@@ -154,8 +145,8 @@ body {
 }
 
 /*
-====================================================================
-====================================================================
+==============================================================
+==============================================================
 */
 /*------------------------HEADER---------------------------*/
 body header {
@@ -199,10 +190,10 @@ body header nav ul ul {
     margin: 0 2vw;
 }
 
-/*============================================
+/*==========================================================
                 INDEX HTML
-=============================================*/
-/*---------EXIST_TO_CREATE & LIST------------*/
+==========================================================*/
+/*-----------------EXIST_TO_CREATE & LIST-----------------*/
 
 body .heading h1 {
     font-family: WorkSans-Light;
@@ -213,7 +204,7 @@ body .heading h1 {
     margin: 10vh 0 0 30vw;
 }
 
-/*-----------------BG-PIC------------------*/
+/*------------------------BG-PIC-------------------------*/
 .bg__pic {
     padding-top: 100vh;
     margin: 15vh auto 15vh auto;
@@ -223,11 +214,11 @@ body .heading h1 {
     background-size: 90%;
 }
 
-/*============================================
+/*=======================================================
                 PIC & TEXT
-============================================*/
+=======================================================*/
 #pic__text {
-    margin: 20vh 0;
+    margin: 20vh 0 10vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -369,7 +360,7 @@ body .heading h1 {
     font-size: 1.5rem;
 }
 
-/*---------------PIC LEFT & TEXT-----------------*/
+/*---------------------PIC LEFT & TEXT----------------------*/
 .pic-left__text {
     display: flex;
     justify-content: center;
@@ -403,7 +394,7 @@ body .heading h1 {
     line-height: 3vh;
 }
 
-/*---------------PIC RIGHT & TEXT-----------------*/
+/*----------------------PIC RIGHT & TEXT---------------------*/
 .pic-right__text {
     display: flex;
     justify-content: center;
@@ -489,4 +480,93 @@ body .heading h1 {
     border: 1px solid white;
     letter-spacing: 2px;
     cursor: pointer;
+}
+
+/*=====================================================
+=======================================================
+                    FORMULAR
+=======================================================
+=====================================================*/
+#form {
+    height: 67vh;
+    width: 22vw;
+    margin: 5vh auto;
+    border: 2px solid #867772;
+    display: flex;
+    flex-direction: column;
+}
+
+#form form {
+    margin: 2vh 0 0 2.5vw;
+}
+
+#form h1 {
+    color: #ebccc2;
+    font-size: 3.5rem;
+    margin: 2.5vh 0 3vh 0;
+}
+
+#form input[type="text"] {
+    padding: 1vh 7vw 1vh 1vw;
+    margin-bottom: 2vh;
+    font-size: 1.5rem;
+}
+
+#form input[type="email"] {
+    padding: 1vh 7vw 1vh 1vw;
+    font-size: 1.5rem;
+}
+
+#form form textarea {
+    font-size: 1.5rem;
+    padding: 1vh 0 0 1vw;
+    width: 16.9vw;
+    height: 12vh;
+    margin: 2vh 0;
+    resize: none;
+    display: block;
+}
+
+#form form label:nth-of-type(4) {
+    font-size: 1.5rem;
+    color: #ebccc2;
+    display: block;
+    margin-bottom: 1vh;
+}
+
+#form form label:nth-of-type(5) {
+    font-size: 1.5rem;
+    color: #ebccc2;
+    display: block;
+}
+
+#form form label:nth-of-type(5) a {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.btn {
+    padding: 1vh 2.4vw;
+    margin: 5vh 2vw 0 0;
+    background-color: #ebccc2;
+    border: 1px solid white;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #867772;
+    color: white;
+    transition: .5s;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #ebccc2;
 }
